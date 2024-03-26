@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*
-{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-body
-{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #2f363e;
 }
-.container
-{
+
+.container {
     position: relative;
     height: 800px;
     width: 700px;
@@ -32,13 +31,12 @@ body
     border-radius: 30px;
     padding: 50px;
 }
-form
-{
-    position: relative
-    width 100%;
+
+form {
+    position: relative width 100%;
 }
-.container h3
-{
+
+.container h3 {
     color: #fff;
     font-weight: 600;
     font-size: 2em;
@@ -48,19 +46,20 @@ form
     /* letter-spacing: 2px; */
     text-transform: uppercase;
 }
-.inputBox
-{
+
+.inputBox {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.inputBox .box
-{
+
+.inputBox .box {
     display: flex;
+    justify-content: space-between;
 
 }
-.inputBox span
-{
+
+.inputBox span {
     display: inline-block;
     color: #fff;
     margin-bottom: 10px;
@@ -71,15 +70,17 @@ form
     padding-left: 4px;
     line-height: 1em;
 }
-a
-{
+
+a {
     text-decoration: none;
     color: #fff;
 }
-.home-btn
-{
-    width: 40px;
-    height: 40px;
+
+.home-btn,
+.Register-btn,
+.Clear-btn {
+    width: 50px;
+    height: 45px;
     background: dodgerblue;
     display: flex;
     justify-content: center;
@@ -92,8 +93,8 @@ a
     inset 2px 2px 5px rgba(255, 255, 255, 0.25),
     inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
-.inputBox .box .icon
-{
+
+.inputBox .box .icon {
     position: relative;
     min-width: 40px;
     height: 40px;
@@ -109,19 +110,21 @@ a
     inset 2px 2px 5px rgba(255, 255, 255, 0.25),
     inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
-.inputBox .box input
-{
+
+.inputBox .box input {
     position: relative;
     width: 100%;
     border: none;
     outline: none;
+    margin-top: 10px;
     padding: 10px 20px;
     border-radius: 30px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
     inset 2px 2px 5px rgba(255, 255, 255, 0.35),
     inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
-button
+
+/* button
 {
     background: dodgerblue;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
@@ -132,4 +135,14 @@ button
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 10px;
+} */
+
+.register-heading {
+    background: dodgerblue;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.35),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }

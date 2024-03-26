@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register form</title>
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-    
+
     <div class="container">
-        <form action="" id = "studentForm">
-            <h3>Workshop Registration</h3>
-            <div class="home-btn">
-                <a href="/Home page/index.html"><ion-icon name="home"></ion-icon></a>
+        <form action="" id="studentForm">
+            <div class="register-heading">
+                <h3>Workshop Registration</h3>
             </div>
-            <div class = "inputBox">
+
+            <div class="inputBox">
                 <span>Name</span>
-                <div class = "box">
+                <div class="box">
                     <div class="icon"><ion-icon name="person-sharp"></ion-icon></div>
-                    <input type="text" placeholder="Enter your Name" id="name" required >
+                    <input type="text" placeholder="Enter your Name" id="name" required>
                 </div>
             </div>
-            <div class = "inputBox">
+            <div class="inputBox">
                 <span>College Name</span>
-                <div class = "box">
+                <div class="box">
                     <div class="icon"><ion-icon name="business"></ion-icon></div>
                     <input type="text" placeholder="Enter your College Name " id="collegename" required>
                 </div>
             </div>
-            <div class = "inputBox">
+            <div class="inputBox">
                 <span>Email ID</span>
-                <div class = "box">
+                <div class="box">
                     <div class="icon"><ion-icon name="at-circle"></ion-icon></div>
                     <input type="email" placeholder="Enter you Email ID" id="email" required>
                 </div>
             </div>
-            <div class = "inputBox">
+            <div class="inputBox">
                 <span>Institute ID</span>
-                <div class = "box">
+                <div class="box">
                     <div class="icon"><ion-icon name="library"></ion-icon></div>
                     <input type="text" placeholder="Enter your Institute ID" id="instituteid" required>
                 </div>
             </div>
-            <div class = "inputBox">
+            <div class="inputBox">
                 <span>Mobile</span>
-                <div class = "box">
+                <div class="box">
                     <div class="icon"><ion-icon name="call"></ion-icon></div>
                     <input type="text" placeholder="Enter your Mobile" id="mobile" required>
                 </div>
             </div>
-            <div class = "inputBox">
+            <div class="inputBox">
                 <span>Department</span>
-                <div class = "box">
+                <div class="box">
                     <div class="icon"><ion-icon name="briefcase"></ion-icon></div>
                     <input type="text" placeholder="Enter your Department" id="Dept" required>
                 </div>
             </div>
-            <div class = "inputBox">
-                <div class = "box">
-                    <input type="submit" style="margin-right: 5px;" value = "Register">
-                    <input type="button" style="margin-left: 5px;" value = "Home" onclick="window.location.href='/Home page/index.html'">
+            <div class="inputBox">
+                <div class="box">
+                    <!-- <div class="home-btn">
+                        <a href="/Home page/index.html"><ion-icon name="home"></ion-icon></a>
+                    </div> -->
+                    <input type="button" style="margin-right: 5px; margin-left: 5px; " value="Home" onclick="window.location.href = '/Home page/index.html'"
+                    class="home-btn">
+                    <input type="button" style="margin-right: 5px; margin-left: 5px; " value="Clear" class="Clear-btn"
+                    id="Clear-btn">
+                    <input type="submit" style="margin-right: 5px; margin-left: 5px; " value="Register"
+                        id="Register-btn"
+                        class="Register-btn">
                 </div>
             </div>
         </form>
@@ -69,4 +79,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./form.js"></script>
 </body>
+
 </html>

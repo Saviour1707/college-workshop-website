@@ -46,4 +46,7 @@ const firebaseConfig = {
   const getElementVal = (id) => {
     return document.getElementById(id).value;
   };
-  
+  document.getElementById('Clear-btn').addEventListener('click', function() {
+
+    document.getElementById("studentForm").reset();
+  });
