@@ -139,11 +139,11 @@ nav .navagiation ul li a:hover {
 #home a.blue {
   transition: 0.3s ease;
   color: white;
-  background: rgb(11, 56, 101);
+  background: rgb(57 76 168);
 }
 
 #home a.blue:hover {
-  color: rgb(11, 56, 101);
+  color: rgb(57 76 168);
   background: white;
 }
 
